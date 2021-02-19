@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyAutomationFramework Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="MyAutomationFramework Suite (failed)">
+    <classes>
+      <class name="Tests.HTML5Canvas">
+        <methods>
+          <include name="TestHTMLCanvas"/>
+          <include name="goToHTML5Canvas"/>
+          <include name="screenShotOnFailure"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.HTML5Canvas -->
+      <class name="Tests.JavaScriptExecutor">
+        <methods>
+          <include name="ScrollDownUsingJavaScriptExecutor"/>
+          <include name="screenShotOnFailure"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="goToAmazonSite"/>
+        </methods>
+      </class> <!-- Tests.JavaScriptExecutor -->
+      <class name="Tests.RegistrationWithFakeData">
+        <methods>
+          <include name="goToNopCommerceRegistrationPage"/>
+          <include name="screenShotOnFailure"/>
+          <include name="setUp"/>
+          <include name="RegisterUser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.RegistrationWithFakeData -->
+      <class name="Tests.UploadFiles">
+        <methods>
+          <include name="screenShotOnFailure"/>
+          <include name="uploadFile"/>
+          <include name="goToUploadPage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.UploadFiles -->
+      <class name="Tests.FindAllLinksByFindElements">
+        <methods>
+          <include name="screenShotOnFailure"/>
+          <include name="setUp"/>
+          <include name="TestFindElements"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.FindAllLinksByFindElements -->
+      <class name="Tests.FormAuthenticationTest">
+        <methods>
+          <include name="screenShotOnFailure"/>
+          <include name="setUp"/>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.FormAuthenticationTest -->
+      <class name="Tests.TablesTest">
+        <methods>
+          <include name="screenShotOnFailure"/>
+          <include name="TableTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.TablesTest -->
+      <class name="Tests.ActionsClassOnElements">
+        <methods>
+          <include name="screenShotOnFailure"/>
+          <include name="setUp"/>
+          <include name="ActionClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.ActionsClassOnElements -->
+      <class name="Tests.CheckBoxAndRadioButtons">
+        <methods>
+          <include name="CheckBoxesTest"/>
+          <include name="screenShotOnFailure"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.CheckBoxAndRadioButtons -->
+      <class name="Tests.Frames">
+        <methods>
+          <include name="FrameTestUsingName"/>
+          <include name="goToFramesPage"/>
+          <include name="screenShotOnFailure"/>
+          <include name="FramesTestUsingId"/>
+          <include name="setUp"/>
+          <include name="FrameTestUsingIndex"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.Frames -->
+      <class name="Tests.HandlingMultipleWindows">
+        <methods>
+          <include name="handleMultipleWindowsUsingTitle"/>
+          <include name="screenShotOnFailure"/>
+          <include name="setUp"/>
+          <include name="HandleMultipleWindowsUsingName"/>
+          <include name="goToMultipleWindowsPage"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.HandlingMultipleWindows -->
+      <class name="Tests.PresenceOfAnElement">
+        <methods>
+          <include name="CheckElementPresence"/>
+          <include name="screenShotOnFailure"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.PresenceOfAnElement -->
+      <class name="Tests.DropdownTest">
+        <methods>
+          <include name="dropdownTest"/>
+          <include name="screenShotOnFailure"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.DropdownTest -->
+    </classes>
+  </test> <!-- MyAutomationFramework Suite (failed) -->
+</suite> <!-- Failed suite [MyAutomationFramework Suite] -->
