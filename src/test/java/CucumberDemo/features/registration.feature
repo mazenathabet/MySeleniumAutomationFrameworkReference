@@ -1,7 +1,7 @@
 Feature:
 
   @Regression @Sanity
-  Scenario:
+  Scenario: User can Register Successfully
     Given User open website and go to homepage
     When  User clicks on Register Link
     And   User fills the registration form and clicks submit

@@ -31,7 +31,20 @@ public class CustomXpath {
  driver.findElement(By.xpath("//input[contains(@id,'test_')]")).sendKeys("Test");
  driver.findElement(By.xpath("//input[starts-with(@id,'test_')]")).sendKeys("Test");
  driver.findElement(By.xpath("//input[ends-with(@id,'_test_t')]")).sendKeys("Test");
+_________________________________________________
+ Child xpath
+ ____________________________
+ <div id="gender" class="gender>
+    <span class="male">
+     <input value="M" id="gender-male">
+    </span>
+    <span class="female">
+    <input  value="F" id="gender-female">
+    </span>
 
+ //div[@id='gender']//input[@value='F']
+
+ ______________________________________________________
  for links: custom xpath:
  all the links are represented by <a> html tag:
  driver.findElement(By.xpath("//a[contains(text(),'My Account')]")).click();

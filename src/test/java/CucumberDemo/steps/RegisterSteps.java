@@ -36,26 +36,27 @@ public class RegisterSteps {
 
 //    @When("User fills the registration form and clicks submit")
 //    public void user_fills_the_registration_form_and_clicks_submit() {
-//
+
 //    }
+
     @And("User fills the registration form and clicks submit")
     public void user_fills_the_registration_form_and_clicks_submit() {
         wait = new WebDriverWait(driver,10);
         WebElement firstNameTxtBox = driver.findElement(By.xpath("//input[@id='FirstName']"));
         wait.until(ExpectedConditions.visibilityOf(firstNameTxtBox));
-        firstNameTxtBox.sendKeys("test1");
+        firstNameTxtBox.sendKeys("test");
         WebElement lastNameTxtBox = driver.findElement(By.xpath("//input[@id='LastName']"));
         wait.until(ExpectedConditions.visibilityOf(lastNameTxtBox));
-        firstNameTxtBox.sendKeys("test");
+        lastNameTxtBox.sendKeys("test");
         WebElement emailTxtBox = driver.findElement(By.xpath("//input[@id='Email']"));
         wait.until(ExpectedConditions.visibilityOf(emailTxtBox));
-        firstNameTxtBox.sendKeys("Email@gmail.com");
+        emailTxtBox.sendKeys("Email@gmail.com");
         WebElement passwordTxtBox = driver.findElement(By.xpath("//input[@id='Password']"));
         wait.until(ExpectedConditions.visibilityOf(passwordTxtBox));
-        firstNameTxtBox.sendKeys("password");
+        passwordTxtBox.sendKeys("password");
         WebElement confirmPasswordTxtBox = driver.findElement(By.xpath("//input[@id='ConfirmPassword']"));
         wait.until(ExpectedConditions.visibilityOf(confirmPasswordTxtBox));
-        firstNameTxtBox.sendKeys("password");
+        confirmPasswordTxtBox.sendKeys("password");
         WebElement SubmitBtn = driver.findElement(By.xpath("//button[@id='register-button']"));
         wait.until(ExpectedConditions.elementToBeClickable(SubmitBtn));
         SubmitBtn.click();
@@ -70,7 +71,7 @@ public class RegisterSteps {
     @Then("User should be registered successfully")
     public void user_should_be_registered_successfully() {
 //        System.out.println(driver.findElement(By.xpath("//div[contains(text(),'Your registration completed')]")).isDisplayed());
-//        Assert.assertTrue(driver.findElement(By.xpath("//div[contains(text(),'Your registration completed')]")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//div[contains(text(),'Your registration completed')]")).isDisplayed());
     }
 
 }
