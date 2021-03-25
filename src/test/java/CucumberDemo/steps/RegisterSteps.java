@@ -1,12 +1,16 @@
 package CucumberDemo.steps;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RegisterSteps {
@@ -34,34 +38,33 @@ public class RegisterSteps {
 //    public void user_fills_the_registration_form_and_clicks_submit() {
 //
 //    }
-
-    @When("User fills the registration form and clicks submit")
+    @And("User fills the registration form and clicks submit")
     public void user_fills_the_registration_form_and_clicks_submit() {
-//        wait = new WebDriverWait(driver,10);
-//        WebElement firstNameTxtBox = driver.findElement(By.xpath("//input[@id='FirstName']"));
-//        wait.until(ExpectedConditions.visibilityOf(firstNameTxtBox));
-//        firstNameTxtBox.sendKeys("mazen");
-//        WebElement lastNameTxtBox = driver.findElement(By.xpath("//input[@id='LastName']"));
-//        wait.until(ExpectedConditions.visibilityOf(lastNameTxtBox));
-//        firstNameTxtBox.sendKeys("Ahmed");
-//        WebElement emailTxtBox = driver.findElement(By.xpath("//input[@id='Email']"));
-//        wait.until(ExpectedConditions.visibilityOf(emailTxtBox));
-//        firstNameTxtBox.sendKeys("Email@gmail.com");
-//        WebElement passwordTxtBox = driver.findElement(By.xpath("//input[@id='Password']"));
-//        wait.until(ExpectedConditions.visibilityOf(passwordTxtBox));
-//        firstNameTxtBox.sendKeys("password");
-//        WebElement confirmPasswordTxtBox = driver.findElement(By.xpath("//input[@id='ConfirmPassword']"));
-//        wait.until(ExpectedConditions.visibilityOf(confirmPasswordTxtBox));
-//        firstNameTxtBox.sendKeys("password");
-//        WebElement SubmitBtn = driver.findElement(By.xpath("//button[@id='register-button']"));
-//        wait.until(ExpectedConditions.elementToBeClickable(SubmitBtn));
-//        SubmitBtn.click();
-        driver.findElement(By.xpath("//input[@id='FirstName']")).sendKeys("mazen");
-        driver.findElement(By.xpath("//input[@id='LastName']")).sendKeys("Ahmed");
-        driver.findElement(By.xpath("//input[@id='Email']")).sendKeys("emailTxtBox");
-        driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("password");
-        driver.findElement(By.xpath("//input[@id='ConfirmPassword']")).sendKeys("password");
-        driver.findElement(By.xpath("//button[@id='register-button']")).click();
+        wait = new WebDriverWait(driver,10);
+        WebElement firstNameTxtBox = driver.findElement(By.xpath("//input[@id='FirstName']"));
+        wait.until(ExpectedConditions.visibilityOf(firstNameTxtBox));
+        firstNameTxtBox.sendKeys("test1");
+        WebElement lastNameTxtBox = driver.findElement(By.xpath("//input[@id='LastName']"));
+        wait.until(ExpectedConditions.visibilityOf(lastNameTxtBox));
+        firstNameTxtBox.sendKeys("test");
+        WebElement emailTxtBox = driver.findElement(By.xpath("//input[@id='Email']"));
+        wait.until(ExpectedConditions.visibilityOf(emailTxtBox));
+        firstNameTxtBox.sendKeys("Email@gmail.com");
+        WebElement passwordTxtBox = driver.findElement(By.xpath("//input[@id='Password']"));
+        wait.until(ExpectedConditions.visibilityOf(passwordTxtBox));
+        firstNameTxtBox.sendKeys("password");
+        WebElement confirmPasswordTxtBox = driver.findElement(By.xpath("//input[@id='ConfirmPassword']"));
+        wait.until(ExpectedConditions.visibilityOf(confirmPasswordTxtBox));
+        firstNameTxtBox.sendKeys("password");
+        WebElement SubmitBtn = driver.findElement(By.xpath("//button[@id='register-button']"));
+        wait.until(ExpectedConditions.elementToBeClickable(SubmitBtn));
+        SubmitBtn.click();
+//        driver.findElement(By.xpath("//input[@id='FirstName']")).sendKeys("test1");
+//        driver.findElement(By.xpath("//input[@id='LastName']")).sendKeys("test");
+//        driver.findElement(By.xpath("//input[@id='Email']")).sendKeys("Email@gmail.com");
+//        driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("password");
+//        driver.findElement(By.xpath("//input[@id='ConfirmPassword']")).sendKeys("password");
+//        driver.findElement(By.xpath("//button[@id='register-button']")).click();
     }
 
     @Then("User should be registered successfully")
