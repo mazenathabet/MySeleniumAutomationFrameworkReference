@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-26T17:43:41 EET" name="All Test Suite" finished-at="2021-03-26T17:46:39 EET" duration-ms="178159">
+    <groups>
+    </groups>
+    <test started-at="2021-03-26T17:43:41 EET" name="D:/Automation Workshops/MySeleniumAutomationFrameworkReference" finished-at="2021-03-26T17:46:39 EET" duration-ms="178159">
+      <class name="Tests.TablesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.TablesTest@5cbe877d]" started-at="2021-03-26T17:46:11 EET" name="setUp" finished-at="2021-03-26T17:46:26 EET" duration-ms="15052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TableTest()[pri:0, instance:Tests.TablesTest@5cbe877d]" started-at="2021-03-26T17:46:26 EET" name="TableTest" finished-at="2021-03-26T17:46:27 EET" duration-ms="1054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TableTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.TablesTest@5cbe877d]" started-at="2021-03-26T17:46:27 EET" name="tearDown" finished-at="2021-03-26T17:46:28 EET" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.TablesTest -->
+      <class name="Tests.FindAllLinksByFindElements">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.FindAllLinksByFindElements@366c4480]" started-at="2021-03-26T17:45:12 EET" name="setUp" finished-at="2021-03-26T17:45:19 EET" duration-ms="6283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TestFindElements()[pri:0, instance:Tests.FindAllLinksByFindElements@366c4480]" started-at="2021-03-26T17:45:19 EET" name="TestFindElements" finished-at="2021-03-26T17:45:19 EET" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFindElements -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.FindAllLinksByFindElements@366c4480]" started-at="2021-03-26T17:45:19 EET" name="tearDown" finished-at="2021-03-26T17:45:21 EET" duration-ms="1217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.FindAllLinksByFindElements -->
+      <class name="Tests.Frames">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.Frames@5cdd09b1]" started-at="2021-03-26T17:45:37 EET" name="setUp" finished-at="2021-03-26T17:45:46 EET" duration-ms="8906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToFramesPage()[pri:0, instance:Tests.Frames@5cdd09b1]" started-at="2021-03-26T17:45:46 EET" name="goToFramesPage" finished-at="2021-03-26T17:45:47 EET" duration-ms="894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToFramesPage -->
+        <test-method signature="FramesTestUsingId()[pri:1, instance:Tests.Frames@5cdd09b1]" started-at="2021-03-26T17:45:47 EET" name="FramesTestUsingId" finished-at="2021-03-26T17:45:47 EET" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FramesTestUsingId -->
+        <test-method is-config="true" signature="goToFramesPage()[pri:0, instance:Tests.Frames@5cdd09b1]" started-at="2021-03-26T17:45:47 EET" name="goToFramesPage" finished-at="2021-03-26T17:45:48 EET" duration-ms="596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToFramesPage -->
+        <test-method signature="FrameTestUsingName()[pri:2, instance:Tests.Frames@5cdd09b1]" started-at="2021-03-26T17:45:48 EET" name="FrameTestUsingName" finished-at="2021-03-26T17:45:48 EET" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FrameTestUsingName -->
+        <test-method is-config="true" signature="goToFramesPage()[pri:0, instance:Tests.Frames@5cdd09b1]" started-at="2021-03-26T17:45:48 EET" name="goToFramesPage" finished-at="2021-03-26T17:45:48 EET" duration-ms="535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToFramesPage -->
+        <test-method signature="FrameTestUsingIndex()[pri:3, instance:Tests.Frames@5cdd09b1]" started-at="2021-03-26T17:45:48 EET" name="FrameTestUsingIndex" finished-at="2021-03-26T17:45:48 EET" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FrameTestUsingIndex -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Frames@5cdd09b1]" started-at="2021-03-26T17:45:48 EET" name="tearDown" finished-at="2021-03-26T17:45:49 EET" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.Frames -->
+      <class name="Tests.PresenceOfAnElement">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.PresenceOfAnElement@681a8b4e]" started-at="2021-03-26T17:46:05 EET" name="setUp" finished-at="2021-03-26T17:46:10 EET" duration-ms="4837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CheckElementPresence()[pri:0, instance:Tests.PresenceOfAnElement@681a8b4e]" started-at="2021-03-26T17:46:10 EET" name="CheckElementPresence" finished-at="2021-03-26T17:46:11 EET" duration-ms="857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckElementPresence -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.PresenceOfAnElement@681a8b4e]" started-at="2021-03-26T17:46:11 EET" name="tearDown" finished-at="2021-03-26T17:46:11 EET" duration-ms="663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.PresenceOfAnElement -->
+      <class name="Tests.UploadFiles">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.UploadFiles@5c08c46a]" started-at="2021-03-26T17:46:28 EET" name="setUp" finished-at="2021-03-26T17:46:36 EET" duration-ms="8330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToUploadPage()[pri:0, instance:Tests.UploadFiles@5c08c46a]" started-at="2021-03-26T17:46:36 EET" name="goToUploadPage" finished-at="2021-03-26T17:46:37 EET" duration-ms="789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToUploadPage -->
+        <test-method signature="uploadFile()[pri:0, instance:Tests.UploadFiles@5c08c46a]" started-at="2021-03-26T17:46:37 EET" name="uploadFile" finished-at="2021-03-26T17:46:38 EET" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadFile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.UploadFiles@5c08c46a]" started-at="2021-03-26T17:46:38 EET" name="tearDown" finished-at="2021-03-26T17:46:39 EET" duration-ms="1191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.UploadFiles -->
+      <class name="Tests.CheckBoxAndRadioButtons">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CheckBoxAndRadioButtons@2d36e77e]" started-at="2021-03-26T17:44:53 EET" name="setUp" finished-at="2021-03-26T17:45:00 EET" duration-ms="6917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CheckBoxesTest()[pri:0, instance:Tests.CheckBoxAndRadioButtons@2d36e77e]" started-at="2021-03-26T17:45:00 EET" name="CheckBoxesTest" finished-at="2021-03-26T17:45:00 EET" duration-ms="726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBoxesTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CheckBoxAndRadioButtons@2d36e77e]" started-at="2021-03-26T17:45:00 EET" name="tearDown" finished-at="2021-03-26T17:45:01 EET" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.CheckBoxAndRadioButtons -->
+      <class name="Tests.ChromeOptionsTest">
+        <test-method signature="goToUrl()[pri:0, instance:Tests.ChromeOptionsTest@61c9c3fd]" started-at="2021-03-26T17:45:01 EET" name="goToUrl" finished-at="2021-03-26T17:45:04 EET" duration-ms="3208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToUrl -->
+      </class> <!-- Tests.ChromeOptionsTest -->
+      <class name="Tests.CheckAllLinksResponseCodes">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CheckAllLinksResponseCodes@1253e7cb]" started-at="2021-03-26T17:44:10 EET" name="setUp" finished-at="2021-03-26T17:44:18 EET" duration-ms="7704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CheckLinksResponseCode()[pri:0, instance:Tests.CheckAllLinksResponseCodes@1253e7cb]" started-at="2021-03-26T17:44:18 EET" name="CheckLinksResponseCode" finished-at="2021-03-26T17:44:52 EET" duration-ms="33755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckLinksResponseCode -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CheckAllLinksResponseCodes@1253e7cb]" started-at="2021-03-26T17:44:52 EET" name="tearDown" finished-at="2021-03-26T17:44:53 EET" duration-ms="766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.CheckAllLinksResponseCodes -->
+      <class name="Tests.BrowserNavigationCommands">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.BrowserNavigationCommands@60975100]" started-at="2021-03-26T17:43:58 EET" name="setUp" finished-at="2021-03-26T17:44:08 EET" duration-ms="9895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="BrowserNavigationCommand()[pri:0, instance:Tests.BrowserNavigationCommands@60975100]" started-at="2021-03-26T17:44:08 EET" name="BrowserNavigationCommand" finished-at="2021-03-26T17:44:10 EET" duration-ms="1386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserNavigationCommand -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.BrowserNavigationCommands@60975100]" started-at="2021-03-26T17:44:10 EET" name="tearDown" finished-at="2021-03-26T17:44:10 EET" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.BrowserNavigationCommands -->
+      <class name="Tests.FormAuthenticationUsingPropertiesFileDataTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.FormAuthenticationUsingPropertiesFileDataTest@302a07d]" started-at="2021-03-26T17:45:28 EET" name="setUp" finished-at="2021-03-26T17:45:35 EET" duration-ms="6524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Login()[pri:1, instance:Tests.FormAuthenticationUsingPropertiesFileDataTest@302a07d]" started-at="2021-03-26T17:45:35 EET" name="Login" finished-at="2021-03-26T17:45:36 EET" duration-ms="1537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.FormAuthenticationUsingPropertiesFileDataTest@302a07d]" started-at="2021-03-26T17:45:36 EET" name="tearDown" finished-at="2021-03-26T17:45:37 EET" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.FormAuthenticationUsingPropertiesFileDataTest -->
+      <class name="Tests.HandlingMultipleWindows">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HandlingMultipleWindows@7e8dcdaa]" started-at="2021-03-26T17:45:57 EET" name="setUp" finished-at="2021-03-26T17:46:01 EET" duration-ms="4700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToMultipleWindowsPage()[pri:0, instance:Tests.HandlingMultipleWindows@7e8dcdaa]" started-at="2021-03-26T17:46:01 EET" name="goToMultipleWindowsPage" finished-at="2021-03-26T17:46:03 EET" duration-ms="1571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMultipleWindowsPage -->
+        <test-method signature="handleMultipleWindowsUsingTitle()[pri:1, instance:Tests.HandlingMultipleWindows@7e8dcdaa]" started-at="2021-03-26T17:46:03 EET" name="handleMultipleWindowsUsingTitle" finished-at="2021-03-26T17:46:03 EET" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleMultipleWindowsUsingTitle -->
+        <test-method is-config="true" signature="goToMultipleWindowsPage()[pri:0, instance:Tests.HandlingMultipleWindows@7e8dcdaa]" started-at="2021-03-26T17:46:03 EET" name="goToMultipleWindowsPage" finished-at="2021-03-26T17:46:04 EET" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMultipleWindowsPage -->
+        <test-method signature="HandleMultipleWindowsUsingName()[pri:2, instance:Tests.HandlingMultipleWindows@7e8dcdaa]" started-at="2021-03-26T17:46:04 EET" name="HandleMultipleWindowsUsingName" finished-at="2021-03-26T17:46:04 EET" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandleMultipleWindowsUsingName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HandlingMultipleWindows@7e8dcdaa]" started-at="2021-03-26T17:46:04 EET" name="tearDown" finished-at="2021-03-26T17:46:05 EET" duration-ms="711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.HandlingMultipleWindows -->
+      <class name="Tests.HTML5Canvas">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HTML5Canvas@8c11eee]" started-at="2021-03-26T17:45:49 EET" name="setUp" finished-at="2021-03-26T17:45:54 EET" duration-ms="4718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToHTML5Canvas()[pri:0, instance:Tests.HTML5Canvas@8c11eee]" started-at="2021-03-26T17:45:54 EET" name="goToHTML5Canvas" finished-at="2021-03-26T17:45:55 EET" duration-ms="872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToHTML5Canvas -->
+        <test-method signature="TestHTMLCanvas()[pri:0, instance:Tests.HTML5Canvas@8c11eee]" started-at="2021-03-26T17:45:55 EET" name="TestHTMLCanvas" finished-at="2021-03-26T17:45:56 EET" duration-ms="1460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHTMLCanvas -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HTML5Canvas@8c11eee]" started-at="2021-03-26T17:45:56 EET" name="tearDown" finished-at="2021-03-26T17:45:57 EET" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.HTML5Canvas -->
+      <class name="Tests.DropdownTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.DropdownTest@3b0c9195]" started-at="2021-03-26T17:45:04 EET" name="setUp" finished-at="2021-03-26T17:45:11 EET" duration-ms="6637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dropdownTest()[pri:0, instance:Tests.DropdownTest@3b0c9195]" started-at="2021-03-26T17:45:11 EET" name="dropdownTest" finished-at="2021-03-26T17:45:12 EET" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.DropdownTest@3b0c9195]" started-at="2021-03-26T17:45:12 EET" name="tearDown" finished-at="2021-03-26T17:45:12 EET" duration-ms="737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.DropdownTest -->
+      <class name="Tests.FormAuthenticationUsingExcelDataTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.FormAuthenticationUsingExcelDataTest@2c7b5824]" started-at="2021-03-26T17:45:21 EET" name="setUp" finished-at="2021-03-26T17:45:25 EET" duration-ms="4858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:1, instance:Tests.FormAuthenticationUsingExcelDataTest@2c7b5824]" started-at="2021-03-26T17:45:26 EET" name="Login" data-provider="ExcelData" finished-at="2021-03-26T17:45:28 EET" duration-ms="1546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tomsmith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.FormAuthenticationUsingExcelDataTest@2c7b5824]" started-at="2021-03-26T17:45:28 EET" name="tearDown" finished-at="2021-03-26T17:45:28 EET" duration-ms="643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.FormAuthenticationUsingExcelDataTest -->
+      <class name="Tests.AlertHandling">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.AlertHandling@7966baa7]" started-at="2021-03-26T17:43:41 EET" name="setUp" finished-at="2021-03-26T17:43:54 EET" duration-ms="13415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToAlertPage()[pri:0, instance:Tests.AlertHandling@7966baa7]" started-at="2021-03-26T17:43:54 EET" name="goToAlertPage" finished-at="2021-03-26T17:43:56 EET" duration-ms="1585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToAlertPage -->
+        <test-method signature="HandleAlerts()[pri:1, instance:Tests.AlertHandling@7966baa7]" started-at="2021-03-26T17:43:56 EET" name="HandleAlerts" finished-at="2021-03-26T17:43:56 EET" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HandleAlerts -->
+        <test-method is-config="true" signature="goToAlertPage()[pri:0, instance:Tests.AlertHandling@7966baa7]" started-at="2021-03-26T17:43:56 EET" name="goToAlertPage" finished-at="2021-03-26T17:43:56 EET" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToAlertPage -->
+        <test-method signature="acceptConfirmAlert()[pri:2, instance:Tests.AlertHandling@7966baa7]" started-at="2021-03-26T17:43:56 EET" name="acceptConfirmAlert" finished-at="2021-03-26T17:43:56 EET" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acceptConfirmAlert -->
+        <test-method is-config="true" signature="goToAlertPage()[pri:0, instance:Tests.AlertHandling@7966baa7]" started-at="2021-03-26T17:43:56 EET" name="goToAlertPage" finished-at="2021-03-26T17:43:57 EET" duration-ms="1001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToAlertPage -->
+        <test-method signature="CancelConfirmAlert()[pri:3, instance:Tests.AlertHandling@7966baa7]" started-at="2021-03-26T17:43:57 EET" name="CancelConfirmAlert" finished-at="2021-03-26T17:43:57 EET" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CancelConfirmAlert -->
+        <test-method is-config="true" signature="goToAlertPage()[pri:0, instance:Tests.AlertHandling@7966baa7]" started-at="2021-03-26T17:43:57 EET" name="goToAlertPage" finished-at="2021-03-26T17:43:58 EET" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToAlertPage -->
+        <test-method signature="sendKeysToPromptAlert()[pri:4, instance:Tests.AlertHandling@7966baa7]" started-at="2021-03-26T17:43:58 EET" name="sendKeysToPromptAlert" finished-at="2021-03-26T17:43:58 EET" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendKeysToPromptAlert -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AlertHandling@7966baa7]" started-at="2021-03-26T17:43:58 EET" name="tearDown" finished-at="2021-03-26T17:43:58 EET" duration-ms="738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.AlertHandling -->
+    </test> <!-- D:/Automation Workshops/MySeleniumAutomationFrameworkReference -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
