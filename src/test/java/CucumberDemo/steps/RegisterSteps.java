@@ -1,5 +1,7 @@
 package CucumberDemo.steps;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -19,11 +21,20 @@ public class RegisterSteps {
     WebDriver driver;
     WebDriverWait wait;
 
-    @Given("User open website and go to homepage")
-    public void user_open_website_and_go_to_homepage() {
+    @Before
+    public void setup(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+    }
+    @After
+    public void teardown(){
+        driver.quit();
+    }
+
+    @Given("User at the homepage")
+    public void user_at_the_homepage() {
+
         driver.get("https://demo.nopcommerce.com/");
 //      driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
     }
@@ -34,29 +45,40 @@ public class RegisterSteps {
 //      driver.findElement(By.linkText("Register"));
     }
 
-//    @When("User fills the registration form and clicks submit")
-//    public void user_fills_the_registration_form_and_clicks_submit() {
+    @When("user clicks on login link")
+    public void user_clicks_on_login_link() {
+        wait = new WebDriverWait(driver, 10);
+        WebElement loginLink = driver.findElement(By.linkText("Log in"));
+        wait.until(ExpectedConditions.elementToBeClickable(loginLink));
+        loginLink.click();
+    }
 
-//    }
+    @Then("User should be logged in successfully and logout")
+    public void user_should_be_logged_in_successfully_and_logout() {
+        wait = new WebDriverWait(driver,10);
+//        WebElement logoutButton  = driver.findElement(By.xpath("//a[@class='ico-logout']"));
+//        wait.until(ExpectedConditions.elementToBeClickable(logoutButton));
+//        logoutButton.click();
+    }
 
-    @And("User fills the registration form and clicks submit")
-    public void user_fills_the_registration_form_and_clicks_submit() {
+    @And("User fills the registration form {string} {string} {string} {string} and clicks submit")
+    public void user_Fills_TheRegistration_Form_And_Clicks_Submit(String fName, String lName, String email, String password) {
         wait = new WebDriverWait(driver,10);
         WebElement firstNameTxtBox = driver.findElement(By.xpath("//input[@id='FirstName']"));
         wait.until(ExpectedConditions.visibilityOf(firstNameTxtBox));
-        firstNameTxtBox.sendKeys("test");
+        firstNameTxtBox.sendKeys(fName);
         WebElement lastNameTxtBox = driver.findElement(By.xpath("//input[@id='LastName']"));
         wait.until(ExpectedConditions.visibilityOf(lastNameTxtBox));
-        lastNameTxtBox.sendKeys("test");
+        lastNameTxtBox.sendKeys(lName);
         WebElement emailTxtBox = driver.findElement(By.xpath("//input[@id='Email']"));
         wait.until(ExpectedConditions.visibilityOf(emailTxtBox));
-        emailTxtBox.sendKeys("Email@gmail.com");
+        emailTxtBox.sendKeys(email);
         WebElement passwordTxtBox = driver.findElement(By.xpath("//input[@id='Password']"));
         wait.until(ExpectedConditions.visibilityOf(passwordTxtBox));
-        passwordTxtBox.sendKeys("password");
+        passwordTxtBox.sendKeys(password);
         WebElement confirmPasswordTxtBox = driver.findElement(By.xpath("//input[@id='ConfirmPassword']"));
         wait.until(ExpectedConditions.visibilityOf(confirmPasswordTxtBox));
-        confirmPasswordTxtBox.sendKeys("password");
+        confirmPasswordTxtBox.sendKeys(password);
         WebElement SubmitBtn = driver.findElement(By.xpath("//button[@id='register-button']"));
         wait.until(ExpectedConditions.elementToBeClickable(SubmitBtn));
         SubmitBtn.click();
@@ -66,12 +88,32 @@ public class RegisterSteps {
 //        driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("password");
 //        driver.findElement(By.xpath("//input[@id='ConfirmPassword']")).sendKeys("password");
 //        driver.findElement(By.xpath("//button[@id='register-button']")).click();
+
     }
 
     @Then("User should be registered successfully")
     public void user_should_be_registered_successfully() {
 //        System.out.println(driver.findElement(By.xpath("//div[contains(text(),'Your registration completed')]")).isDisplayed());
-        Assert.assertTrue(driver.findElement(By.xpath("//div[contains(text(),'Your registration completed')]")).isDisplayed());
+        WebElement RegisteredLabel = driver.findElement(By.xpath("//div[contains(text(),'Your registration completed')]"));
+        Assert.assertTrue(RegisteredLabel.isDisplayed());
+        WebElement logoutButton  = driver.findElement(By.xpath("//a[@class='ico-logout']"));
+        wait.until(ExpectedConditions.elementToBeClickable(logoutButton));
+        logoutButton.click();
     }
 
+    @And("user login with valid data {string} and {string}")
+    public void user_Login_With_Valid_Data_email_And_password(String email, String password) throws InterruptedException {
+        wait = new WebDriverWait(driver, 10);
+        Thread.sleep(2000);
+        WebElement emailTxtBox = driver.findElement(By.id("Email"));
+        wait.until(ExpectedConditions.visibilityOf(emailTxtBox));
+        emailTxtBox.sendKeys(email);
+        WebElement passwordTxtBox = driver.findElement(By.id("Password"));
+        wait.until(ExpectedConditions.visibilityOf(passwordTxtBox));
+        passwordTxtBox.sendKeys(password);
+        driver.findElement(By.id("RememberMe")).click();
+        WebElement loginBtn = driver.findElement(By.xpath("//button[@type='submit'][@class='button-1 login-button']"));
+        wait.until(ExpectedConditions.visibilityOf(loginBtn));
+        loginBtn.click();
+    }
 }

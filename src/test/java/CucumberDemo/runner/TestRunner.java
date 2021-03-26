@@ -12,6 +12,6 @@ import org.junit.runner.RunWith;
         glue = "CucumberDemo",
         tags = "",
         plugin =  {"pretty" , "html:target/Reports/report.html", "json:target/Reports/report.json"},
-        dryRun = true)
+        dryRun = false)
 public class TestRunner {
 }
