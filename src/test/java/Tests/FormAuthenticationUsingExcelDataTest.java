@@ -6,9 +6,10 @@ import base.FrameworkInitialize;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utilities.ExcelReader;
+
 import java.io.IOException;
 
-public class FormAuthenticationTest extends FrameworkInitialize {
+public class FormAuthenticationUsingExcelDataTest extends FrameworkInitialize {
     /*
     Data provider annotation to import the Data from an outsource Excel file
     to apply the Data Driven Testing
@@ -19,7 +20,6 @@ public class FormAuthenticationTest extends FrameworkInitialize {
         ExcelReader ER = new ExcelReader();
         return ER.getExcelData();
     }
-
     @Test(priority = 1, dataProvider = "ExcelData")//Takes the Test Data from the " ExcelData " Data provider method
     public void Login(String username, String password) {
         /*

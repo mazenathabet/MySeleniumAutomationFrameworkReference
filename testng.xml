@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/Automation Workshops/MySeleniumAutomationFrameworkReference">
+        <classes>
+            <class name="Tests.AlertHandling">
+                <methods>
+                    <include name="HandleAlerts"/>
+                    <include name="acceptConfirmAlert"/>
+                    <include name="CancelConfirmAlert"/>
+                    <include name="sendKeysToPromptAlert"/>
+                </methods>
+            </class>
+            <class name="Tests.BrowserNavigationCommands">
+                <methods>
+                    <include name="BrowserNavigationCommand"/>
+                </methods>
+            </class>
+            <class name="Tests.CheckAllLinksResponseCodes">
+                <methods>
+                    <include name="CheckLinksResponseCode"/>
+                </methods>
+            </class>
+            <class name="Tests.CheckBoxAndRadioButtons">
+                <methods>
+                    <include name="CheckBoxesTest"/>
+                </methods>
+            </class>
+            <class name="Tests.ChromeOptionsTest">
+                <methods>
+                    <include name="goToUrl"/>
+                </methods>
+            </class>
+            <class name="Tests.DropdownTest">
+                <methods>
+                    <include name="dropdownTest"/>
+                </methods>
+            </class>
+            <class name="Tests.FindAllLinksByFindElements">
+                <methods>
+                    <include name="TestFindElements"/>
+                </methods>
+            </class>
+            <class name="Tests.FormAuthenticationUsingExcelDataTest">
+                <methods>
+                    <include name="Login"/>
+                </methods>
+            </class>
+            <class name="Tests.FormAuthenticationUsingPropertiesFileDataTest">
+                <methods>
+                    <include name="Login"/>
+                </methods>
+            </class>
+            <class name="Tests.Frames">
+                <methods>
+                    <include name="FramesTestUsingId"/>
+                    <include name="FrameTestUsingName"/>
+                    <include name="FrameTestUsingIndex"/>
+                </methods>
+            </class>
+            <class name="Tests.HTML5Canvas">
+                <methods>
+                    <include name="TestHTMLCanvas"/>
+                </methods>
+            </class>
+            <class name="Tests.HandlingMultipleWindows">
+                <methods>
+                    <include name="handleMultipleWindowsUsingTitle"/>
+                    <include name="HandleMultipleWindowsUsingName"/>
+                </methods>
+            </class>
+            <class name="Tests.PresenceOfAnElement">
+                <methods>
+                    <include name="CheckElementPresence"/>
+                </methods>
+            </class>
+            <class name="Tests.TablesTest">
+                <methods>
+                    <include name="TableTest"/>
+                </methods>
+            </class>
+            <class name="Tests.UploadFiles">
+                <methods>
+                    <include name="uploadFile"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -27,8 +27,8 @@ public class HTML5Canvas extends FrameworkInitialize {
         Select drawTool = new Select(drawList);
         drawTool.selectByValue("pencil");
         Actions builder = new Actions(DriverContext.Driver);
-        builder.clickAndHold(canvas).moveByOffset(10, 150).moveByOffset(150, 10)
-                .moveByOffset(-10, -150).moveByOffset(-150, -10).release().perform();
+        builder.clickAndHold(canvas).moveByOffset(10, 50).moveByOffset(50, 10)
+                .moveByOffset(-10, -50).moveByOffset(-50, -10).release().perform();
         // Takes ScreenShot
         File srcFile = ((TakesScreenshot) DriverContext.Driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(srcFile, new File("\\src\\ScreenShots\\canvas.png"));
