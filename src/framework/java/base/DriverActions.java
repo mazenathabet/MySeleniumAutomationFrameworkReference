@@ -24,6 +24,7 @@ public class DriverActions extends DriverContext {
 
     public void clickOn(By by) {
         wait.until(ExpectedConditions.elementToBeClickable(by));
+        scrollToElement(by);
         Driver.findElement(by).click();
     }
 
@@ -34,7 +35,7 @@ public class DriverActions extends DriverContext {
     }
 
     public void sendKeysToElement(String value, By by) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+        scrollToElement(by);
         Driver.findElement(by).clear();
         Driver.findElement(by).sendKeys(value);
     }
@@ -47,6 +48,7 @@ public class DriverActions extends DriverContext {
 
     public void sendKeyChords(String value, Keys keys, By by) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+        scrollToElement(by);
         Driver.findElement(by).clear();
         Driver.findElement(by).sendKeys(value, keys);
     }
@@ -57,7 +59,7 @@ public class DriverActions extends DriverContext {
     }
 
     public void sendKeysWithoutClear(String value, By by) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+        scrollToElement(by);
         Driver.findElement(by).sendKeys(value);
     }
 

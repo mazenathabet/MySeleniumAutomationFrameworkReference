@@ -39,25 +39,25 @@ public class FrameworkInitialize {
             logger.trace("Chrome driver is opening");
             WebDriverManager.chromedriver().setup();
             DriverContext.Driver = new ChromeDriver(option);
-            DriverContext.Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+            DriverContext.Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
             DriverContext.Driver.manage().window().maximize();
         } else if (Settings.BrowserType.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             DriverContext.Driver = new FirefoxDriver(option);
             logger.trace("Firefox driver is opening");
-            DriverContext.Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+            DriverContext.Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
             DriverContext.Driver.manage().window().maximize();
         } else if (Settings.BrowserType.equalsIgnoreCase("IE")) {
             WebDriverManager.iedriver().setup();
             DriverContext.Driver = new InternetExplorerDriver(option);
             logger.trace("IE driver is opening");
             DriverContext.Driver.manage().window().maximize();
-            DriverContext.Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+            DriverContext.Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         } else if (Settings.BrowserType.equalsIgnoreCase("edge")) {
             WebDriverManager.edgedriver().setup();
             DriverContext.Driver = new EdgeDriver(option);
             logger.trace("Edge driver is opening");
-            DriverContext.Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+            DriverContext.Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
             DriverContext.Driver.manage().window().maximize();
         }
 //        DriverContext.Driver.get(Settings.url);
@@ -69,6 +69,7 @@ public class FrameworkInitialize {
      */
     @AfterMethod
     public void tearDown() {
+        DriverContext.Driver.manage().deleteAllCookies();
         DriverContext.Driver.close();
         DriverContext.Driver.quit();
         logger.trace("driver is closing");

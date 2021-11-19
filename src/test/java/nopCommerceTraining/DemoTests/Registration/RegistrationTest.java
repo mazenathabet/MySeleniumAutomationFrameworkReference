@@ -1,4 +1,4 @@
-package nopCommerceTraining.DemoTests;
+package nopCommerceTraining.DemoTests.Registration;
 
 import base.FrameworkInitialize;
 import com.github.javafaker.Faker;
@@ -32,7 +32,7 @@ public class RegistrationTest extends FrameworkInitialize {
     String ExistingEmailMessage = "The specified email already exists";
 
     @Test()
-    public void UserCanRegisterNewAccount() {
+    void UserCanRegisterNewAccount() {
         LandingPage lPage = new LandingPage();
         lPage.goToRegistrationPage().checkRegistrationPageIsOpened();
         RegistrationPage rPage = new RegistrationPage();
@@ -48,12 +48,14 @@ public class RegistrationTest extends FrameworkInitialize {
                 .enterCompanyName(company)
                 .enterPasswordAndConfirmIt(password)
                 .clickRegisterButton();
+        System.out.println(email);
+        System.out.println(password);
         assertTrue("registration is not completed", lPage.verifySuccessfulRegistration());
         assertThat("",lPage.getResultLabelText(),containsString(successMessage));
     }
 
     @Test (dependsOnMethods = "UserCanRegisterNewAccount")
-    public void UserCantRegisterWithExistingEmail() {
+    void UserCantRegisterWithExistingEmail() {
         LandingPage lPage = new LandingPage();
         lPage.goToRegistrationPage().checkRegistrationPageIsOpened();
         RegistrationPage rPage = new RegistrationPage();
@@ -75,7 +77,7 @@ public class RegistrationTest extends FrameworkInitialize {
     }
 
     @Test
-    public void UserCanRegisterWithMandatoryDataOnly() {
+    void UserCanRegisterWithMandatoryDataOnly() {
         LandingPage lPage = new LandingPage();
         lPage.goToRegistrationPage().checkRegistrationPageIsOpened();
         RegistrationPage rPage = new RegistrationPage();
