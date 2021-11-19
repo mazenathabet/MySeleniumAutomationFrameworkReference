@@ -6,6 +6,7 @@ public class Settings {
      */
 
     public static String url = "https://the-internet.herokuapp.com/";
+    public static String nopCommerceUrl = "https://demo.nopcommerce.com/";
     public static String BrowserType = "chrome";
     public static String ExcelFilePath = System.getProperty("user.dir") + "\\src\\test\\java\\data\\MyAutomationFrameworkTestData.xlsx";
     public static String ScreenShotsPath = System.getProperty("user.dir") + "\\src\\ScreenShots";
